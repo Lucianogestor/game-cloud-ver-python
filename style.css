@@ -1,0 +1,56 @@
+/* styles.css */
+
+/* Estilos gerais */
+body {
+    background-color: #87CEEB; /* Azul claro */
+    font-family: "Comic Sans MS", cursive, sans-serif; /* Fonte estilo história em quadrinhos */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilize o título do jogo */
+.game-title {
+    margin-top: 20px;
+}
+
+.game-title img {
+    max-width: 100%;
+    height: auto;
+    animation: float 3s infinite alternate; /* Movimento sutil na imagem */
+    border: 5px solid transparent;
+    border-image: linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #80ff00, #00ff00, #00ff80, #00ffff, #0080ff, #0000ff, #8000ff, #ff00ff, #ff0080) 1;
+    border-image-slice: 1;
+}
+
+/* Estilize os botões com efeito de hover */
+button {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #fff;
+    border: 2px solid #000;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efeito de transição */
+}
+
+button:hover {
+    background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilize os campos de entrada (mantendo a configuração original) */
+input {
+    font-size: 16px;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Animação para movimento sutil na imagem */
+@keyframes float {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+}

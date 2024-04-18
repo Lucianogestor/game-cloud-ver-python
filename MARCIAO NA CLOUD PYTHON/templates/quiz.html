@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marcião na Cloud</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <img src="{{ url_for('static', filename='logo-game.png') }}" alt="">
+    <h1>MARCIÃO NA CLOUD</h1>
+    <p>Vamos testar os seus conhecimentos e nos divertir um pouco no processo?</p>
+    <form method="POST">
+        <p>{{ pergunta.pergunta }}</p>
+        {% for resposta in pergunta.respostas %}
+            <input type="radio" name="resposta" value="{{ resposta }}"> {{ resposta }}<br>
+        {% endfor %}
+        <input type="submit" value="Próxima pergunta">
+    </form>
+</body>
+</html>
